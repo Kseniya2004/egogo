@@ -13,13 +13,14 @@ div {
 	position: absolute;
 	font: 16px Verdana;
 	height: 25px;
-	top: calc( 100vh - 30px );
+	top: 30px;
 	text-align: center;
 	
 	background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  z-index: 1;
 }
 
 body {
@@ -27,11 +28,11 @@ body {
 } 
   </style>
 </head>
-<body> 
-<canvas id=c></canvas>	
+<body>
 <div>
 Поздравляю с 13 Днём рождения "Васёк"
-</div>
+</div> 
+<canvas id=c></canvas>	
 <script> 
 var w = c.width = window.innerWidth,
 		h = c.height = window.innerHeight,
@@ -42,9 +43,9 @@ var w = c.width = window.innerWidth,
 		
 		opts = {
 			strings: [ 'С', 'Днём', 'рождения!' ],
-			charSize: 30,
-			charSpacing: 35,
-			lineHeight: 40,
+			charSize: 50,
+			charSpacing: 50,
+			lineHeight: 50,
 			
 			cx: w / 2,
 			cy: h / 2,
